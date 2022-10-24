@@ -3,6 +3,8 @@
     padding: 0px;
 }
 
+/* Fondo hecho para que se vean bien los cometas */
+
 .container {
     position: relative;
     width: 100%;
@@ -12,14 +14,14 @@
 }
 
 /* Encabezado */
-
+/* fondo del encabezado */
 header {
     width: 100%;
     height: 100px;
     background: rgba(65, 63, 63, 0.2);
     box-shadow: 0px 0px 5px rgba(65, 63, 63, 0.6);
 }
-
+/* Caja para el contenido dentro del encabezado */
 #encabezado {
     width: 90%;
     height: 100px;
@@ -29,28 +31,28 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-
+/* logo y nombre de la web*/
 #logotipo {
     display: flex;
     flex-direction: row wrap;
     align-items: center;
     
 }
-
+/* estilos de el texto del logo */
 #logotipo h2 {
     margin-left: 15px;
     color: white;
     font-weight: lighter;
     text-shadow: 0px 0px 2px black;
 }
-
+/* tamaño de la imagen en el logo */
 #logotipo img {
     width: 10%;
     border-radius: 5px;
     box-shadow: 0px 0px 3px;
 }
 
-
+/* haciendo los links a otras secciones de la pagina */
 #menu ul {
     list-style: none;
     display: flex;
@@ -75,6 +77,8 @@ header {
     transform: scale(1.1);
 }
 
+/* haciendo el boton de login en el menu */
+
 #login button {
     cursor: pointer;
     width: 70px;
@@ -93,8 +97,82 @@ header {
     color: rgb(93, 88, 37);
 }
 
+/* estilos menu hamburgesa para version movil */
+/* no debe aparecer en la vista de escritorio */
+.menu_burger {
+    display: none;
+}
 
+.menu_burger img {
+    width: 40px;
+}
 
+/* Contenido de la pagina */
+/* dividi la pagina en 4 secciones, porque queria el contenido dividido en la parte iz superior,
+y en la parte derecha inferior, pero como ahora lo resolvi de otra manera casi no es necesario. ahora
+se puede hacer con dos columnas. */
+main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+}
+
+/* aqui puse los atributos de la caja imagen que va en la esquina inferior derecha */
+
+.imagen {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+}
+
+.imagen img {
+    width: 400px;
+}
+
+/* aqui puse los atributos de la caja con el texto, no me gusto como quedo,
+tengo que seguir intentando moverlo y cambiarle la fuente y la organizacion. */
+
+.text {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    color: white;
+    width: 60%;
+    height: 100vh;
+    margin: 0px auto;
+    margin-top: 35px;
+    font-family: 'Ubuntu', sans-serif;
+    align-self: flex-start;
+}
+
+.text h3 {
+    margin-bottom: 15px;
+}
+
+.text p {
+    margin: 15px;
+    margin-bottom: 25px;
+}
+
+/* el boton tiene la sombra negra que lo hacer ver muy opaco, y el color verde parece moco
+ver que hacer con el color. */
+
+.text button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    background-color: rgba(72, 159, 72, 0.681);
+    box-shadow: 0px 0px 3px black;
+    color: white;
+    padding: 4px;
+}
+
+.text button:hover {
+    border-radius: 7px;
+    background-color: rgba(72, 159, 72, 0.764);
+}
 
 
 
@@ -132,9 +210,9 @@ header {
     animation-delay: 4s;
 }
 
-.cincp {
+.cinco {
     animation: comet5 1.5s infinite linear;
-    animation-delay: 1s;
+    animation-delay: 6s;
 }
 
 @keyframes comet {
