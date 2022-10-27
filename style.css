@@ -11,6 +11,7 @@
     height: 100vh;
     background: radial-gradient(rgba(65, 63, 63, 0.786), rgba(48, 46, 46, 0.885));
     overflow: hidden;
+    z-index: -2;
 }
 
 /* Encabezado */
@@ -367,6 +368,9 @@ ver que hacer con el color. */
     }
     .text {
         margin-top: 65px;
+    }
+    .imagen {
+        z-index: -1;
     }
 
 }
