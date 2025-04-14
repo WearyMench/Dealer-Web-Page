@@ -380,6 +380,7 @@ ver que hacer con el color. */
 .contacto p {
   font-size: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .contacto .info {
@@ -643,5 +644,14 @@ footer {
 
   .text {
     margin-top: 35px;
+  }
+}
+
+@media (max-height: 800px) {
+  .about-section p {
+    font-size: 16px;
+  }
+  .contacto p {
+    font-size: 16px;
   }
 }

@@ -28,30 +28,32 @@
       </div>
     </header>
     <div class="container">
-      <h1>Cotiza tu auto ideal</h1>
+      <div class="cotizador">
+        <h1>Cotiza tu auto ideal</h1>
 
-      <label for="tipo">Tipo de Auto:</label>
-      <select id="tipo">
-        <option value="sedan">Sedán</option>
-        <option value="suv">SUV</option>
-        <option value="pickup">Pickup</option>
-      </select>
+        <label for="tipo">Tipo de Auto:</label>
+        <select id="tipo">
+          <option value="sedan">Sedán</option>
+          <option value="suv">SUV</option>
+          <option value="pickup">Pickup</option>
+        </select>
 
-      <label for="marca">Marca:</label>
-      <select id="marca">
-        <option value="toyota">Toyota</option>
-        <option value="ford">Ford</option>
-        <option value="honda">Honda</option>
-      </select>
+        <label for="marca">Marca:</label>
+        <select id="marca">
+          <option value="toyota">Toyota</option>
+          <option value="ford">Ford</option>
+          <option value="honda">Honda</option>
+        </select>
 
-      <label for="anio">Año:</label>
-      <select id="anio">
-        <option value="2020">2020</option>
-        <option value="2022">2022</option>
-        <option value="2024">2024</option>
-      </select>
+        <label for="anio">Año:</label>
+        <select id="anio">
+          <option value="2020">2020</option>
+          <option value="2022">2022</option>
+          <option value="2024">2024</option>
+        </select>
 
-      <button onclick="calcularPrecio()">Calcular Precio</button>
+        <button onclick="calcularPrecio()">Calcular Precio</button>
+      </div>
 
       <div class="resultado" id="resultado">
         <p>Selecciona tus opciones y presiona "Calcular Precio".</p>

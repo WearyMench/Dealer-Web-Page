@@ -46,5 +46,11 @@ function calcularPrecio() {
       <div class="modelo-visual">
         <img src="${imagenSrc}" alt="Modelo visual">
       </div>
+      <a href="mailto:ventas@kgautoimport.com?subject=Cotización%20de%20vehículo&body=
+        Tipo: ${tipo.toUpperCase()}%0A
+        Marca: ${marca.toUpperCase()}%0A
+        Año: ${anio}%0A
+        Precio estimado: $${precioBase.toLocaleString()}" 
+        class="btn-cotizar">Solicitar cotización</a>
     `;
 }
