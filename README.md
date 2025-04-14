@@ -17,6 +17,7 @@ This is a website for a **car import dealership**, built with **pure HTML, CSS, 
 
 ## 📁 Project Structure
 
+```
 📂 kg-auto-import/
 │
 ├── index.html           # Main Landing Page
@@ -36,6 +37,7 @@ This is a website for a **car import dealership**, built with **pure HTML, CSS, 
 │   ├── cotizar.js
 │
 └── README.md            # This file
+```
 
 ---
 
@@ -59,6 +61,7 @@ This is a website for a **car import dealership**, built with **pure HTML, CSS, 
 
 
 📌 Notes
-Images are placeholders and can be replaced with real dealership assets.
 
-This is a fully static project, no backend required.
+- Images are placeholders and can be replaced with real dealership assets.
+
+- This is a fully static project, no backend required.
