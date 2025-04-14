@@ -5,9 +5,10 @@ burger.addEventListener("click", () => {
 });
 
 function calcularPrecio() {
-  const basePath = window.location.pathname.includes("/Dealer-Web-Page/")
-    ? "/Dealer-Web-Page/"
-    : "/";
+  const basePath =
+    window.location.hostname === "wearymench.github.io"
+      ? "/Dealer-Web-Page/"
+      : "/";
   console.log(basePath);
   const tipo = document.getElementById("tipo").value;
   const marca = document.getElementById("marca").value;
