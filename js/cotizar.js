@@ -26,7 +26,7 @@ function calcularPrecio() {
   let imagenSrc = "";
   switch (tipo) {
     case "sedan":
-      imagenSrc = "/img/sedan.png";
+      imagenSrc = "../img/sedan.png";
       break;
     case "suv":
       imagenSrc = "https://via.placeholder.com/300x150?text=SUV";
