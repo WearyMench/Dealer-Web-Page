@@ -5,7 +5,7 @@ burger.addEventListener("click", () => {
 });
 
 function calcularPrecio() {
-  const basePath = window.location.pathname.includes(".github.io")
+  const basePath = window.location.pathname.includes("/Dealer-Web-Page/")
     ? "/Dealer-Web-Page/"
     : "/";
   console.log(basePath);
