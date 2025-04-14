@@ -5,6 +5,9 @@ burger.addEventListener("click", () => {
 });
 
 function calcularPrecio() {
+  const basePath = window.location.pathname.includes(".github.io")
+    ? "/tu-repo/"
+    : "/";
   const tipo = document.getElementById("tipo").value;
   const marca = document.getElementById("marca").value;
   const anio = document.getElementById("anio").value;
@@ -26,7 +29,7 @@ function calcularPrecio() {
   let imagenSrc = "";
   switch (tipo) {
     case "sedan":
-      imagenSrc = "../img/sedan.png";
+      imagenSrc = `${basePath}img/sedan.png`;
       break;
     case "suv":
       imagenSrc = "https://via.placeholder.com/300x150?text=SUV";
