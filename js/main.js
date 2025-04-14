@@ -1,8 +1,20 @@
 //llamaremos el id burger para que al hacer click en el div, aparezca el menu en el movil.
 const burger = document.getElementById("burger");
+const inicio = document.getElementById("inicio");
+const nosotros = document.getElementById("nosotros");
+const contacto = document.getElementById("contact");
 const menumovil = document.getElementById("menumovil");
 burger.addEventListener("click", () => {
   menumovil.classList.toggle("menumovil--show");
+});
+inicio.addEventListener("click", () => {
+  menumovil.classList.remove("menumovil--show");
+});
+nosotros.addEventListener("click", () => {
+  menumovil.classList.remove("menumovil--show");
+});
+contacto.addEventListener("click", () => {
+  menumovil.classList.remove("menumovil--show");
 });
 
 document.getElementById("formulario").addEventListener("submit", function (e) {

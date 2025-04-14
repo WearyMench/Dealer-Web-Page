@@ -8,6 +8,7 @@ function calcularPrecio() {
   const basePath = window.location.pathname.includes(".github.io")
     ? "/Dealer-Web-Page/"
     : "/";
+  console.log(basePath);
   const tipo = document.getElementById("tipo").value;
   const marca = document.getElementById("marca").value;
   const anio = document.getElementById("anio").value;
