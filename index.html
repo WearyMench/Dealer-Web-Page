@@ -1,68 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dealer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/volante.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/volante.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header>
-            <div id="encabezado">
-                <div id="logotipo">
-                    <img src="img/carrito.webp" alt="logo">
-                    <h2>KG Auto Import</h2>
-                </div>
-                <div id="menumovil" class="menumovil">
-                    <nav id="menu">
-                        <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
-                    </nav>
-                    <div id="login">
-                        <a class="boton" href="#">Cotiza Aquí</a>
-                    </div>
-                </div>
-
-                <div id="burger" class="menu_burger">
-                    <img src="img/hamburguesa.png" alt="menu">
-                </div>
+      <header>
+        <div id="encabezado">
+          <div id="logotipo">
+            <img src="img/carrito.webp" alt="logo" />
+            <h2>KG Auto Import</h2>
+          </div>
+          <div id="menumovil" class="menumovil">
+            <nav id="menu">
+              <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+              </ul>
+            </nav>
+            <div id="login">
+              <a class="boton" href="cotizar.html">Cotiza Aquí</a>
             </div>
-        </header>
-        <main>
-            <div class="imagen">
-                <img src="img/f1.svg" alt="Imagen De Vehiculo">
-            </div>
-            <div class="text">
-                <h1>Llevate uno de nuestros mejores autos.</h1>
-                <p class="desk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, vero voluptatibus.
-                    Debitis eveniet
-                    velit, pariatur asperiores perspiciatis odio magni iste corrupti, ab doloribus dolorem consequatur
-                    enim nihil fugit est harum.</p>
-                <p class="movile">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a class="boton" href="#">Cotiza uno ahora!</a>
-            </div>
-        </main>
+          </div>
 
-        <div class="cometa uno"></div>
-        <div class="cometa dos"></div>
-        <div class="cometa tres"></div>
-        <div class="cometa cuatro"></div>
-        <div class="cometa cinco"></div>
+          <div id="burger" class="menu_burger">
+            <img src="img/hamburguesa.png" alt="menu" />
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="imagen">
+          <img src="img/f1.svg" alt="Imagen De Vehiculo" />
+        </div>
+        <div class="text">
+          <h1>Llevate uno de nuestros mejores autos.</h1>
+          <p class="desk">
+            En KG Auto Import te ayudamos a encontrar el auto perfecto para tu
+            estilo de vida. Importamos vehículos de alta calidad, listos para
+            entregar, y te ofrecemos una experiencia de compra simple, rápida y
+            segura. Elige el modelo ideal y empieza a manejar con confianza.
+          </p>
+          <p class="movile">
+            Elige el modelo ideal y empieza a manejar con confianza.
+          </p>
+          <a class="boton" href="cotizar.html">Cotiza uno ahora!</a>
+        </div>
+      </main>
+      <section class="about-section" id="about">
+        <div class="about-container">
+          <div class="about">
+            <h2>¿Quiénes somos?</h2>
+            <p>
+              En KG Auto Import somos apasionados por los autos y comprometidos
+              con nuestros clientes. Nos especializamos en la importación de
+              vehículos desde mercados internacionales, asegurando calidad,
+              transparencia y los mejores precios del mercado.
+            </p>
+            <p>
+              Contamos con un equipo profesional que te acompaña en cada paso,
+              desde la cotización hasta la entrega. Creemos en la confianza, la
+              asesoría personalizada y en hacer que cada cliente quede más que
+              satisfecho.
+            </p>
+          </div>
+        </div>
+        <div class="img-about">
+          <img src="img/Team.png" alt="Team" />
+        </div>
+      </section>
 
-        <script src="js/main.js"></script>
+      <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <p>
+          ¿Tienes alguna pregunta? Contáctanos a través del siguiente formulario
+          o utiliza la información proporcionada.
+        </p>
+        <div class="info">
+          <p><strong>Teléfono:</strong> +1 234 567 890</p>
+          <p><strong>Email:</strong> contacto@kgautoimport.com</p>
+          <p><strong>Dirección:</strong> Calle Principal #123, Ciudad, País</p>
+        </div>
+        <form action="" method="post" id="formulario">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <div id="confirmation"></div>
+          <button type="submit" class="boton">Enviar</button>
+        </form>
+      </section>
+
+      <footer>
+        <div class="footer">
+          <p>KG Auto Import &copy; 2023</p>
+          <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="img/facebook.png" alt="facebook"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="img/instagram.png" alt="instagram"
+            /></a>
+            <a href="https://twitter.com/" target="_blank"
+              ><img src="img/gorjeo.png" alt="twitter"
+            /></a>
+          </div>
+        </div>
+      </footer>
+
+      <div class="cometa uno"></div>
+      <div class="cometa dos"></div>
+      <div class="cometa tres"></div>
+      <div class="cometa cuatro"></div>
+      <div class="cometa cinco"></div>
+
+      <script src="js/main.js"></script>
     </div>
-</body>
-
+  </body>
 </html>

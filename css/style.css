@@ -1,124 +1,123 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Fondo hecho para que se vean bien los cometas */
 
 .container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: radial-gradient(rgba(65, 63, 63, 0.786), rgba(48, 46, 46, 0.885));
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: radial-gradient(rgba(65, 63, 63, 0.786), rgba(48, 46, 46, 0.885));
+  overflow: hidden;
 }
 
 /* Encabezado */
 /* fondo del encabezado */
 header {
-    width: 100%;
-    height: 100px;
-    background: rgba(65, 63, 63, 0.2);
-    box-shadow: 0px 0px 5px rgba(65, 63, 63, 0.6);
-
+  width: 100%;
+  height: 100px;
+  background: rgba(65, 63, 63, 0.2);
+  box-shadow: 0px 0px 5px rgba(65, 63, 63, 0.6);
 }
 
 /* Caja para el contenido dentro del encabezado */
 #encabezado {
-    width: 90%;
-    height: 100px;
-    margin: 0px auto;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
+  width: 90%;
+  height: 100px;
+  margin: 0px auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* logo y nombre de la web*/
 #logotipo {
-    display: flex;
-    flex-direction: row wrap;
-    align-items: center;
-
+  display: flex;
+  flex-direction: row wrap;
+  align-items: center;
 }
 
 /* estilos de el texto del logo */
 #logotipo h2 {
-    margin-left: 15px;
-    color: white;
-    font-weight: lighter;
-    text-shadow: 0px 0px 2px black;
+  margin-left: 15px;
+  color: white;
+  font-weight: lighter;
+  text-shadow: 0px 0px 2px black;
 }
 
 /* tamaño de la imagen en el logo */
 #logotipo img {
-    width: 10%;
-    border-radius: 5px;
-    box-shadow: 0px 0px 3px;
+  width: 10%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px;
 }
 
 .menumovil {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
 /* haciendo los links a otras secciones de la pagina */
 #menu ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 #menu ul li {
-    margin-right: 25px;
-    font-size: 17px;
+  margin-right: 25px;
+  font-size: 17px;
 }
 
-
 #menu ul li a {
-    display: block;
-    color: white;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-decoration: none;
 }
 
 #menu ul li a:hover {
-    color: rgb(180, 180, 141);
-    text-decoration: underline;
-    transform: scale(1.1);
+  color: rgb(180, 180, 141);
+  text-decoration: underline;
+  transform: scale(1.1);
 }
 
 /* haciendo el boton de login en el menu */
 
 #login .boton {
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: lightseagreen;
-    box-shadow: 0px 0px 4px rgb(110, 154, 110);
-    border: none;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-weight: normal;
-    transition: all 300ms;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: lightseagreen;
+  box-shadow: 0px 0px 4px rgb(110, 154, 110);
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-weight: normal;
+  transition: all 300ms;
 }
 
 #login .boton:hover {
-    border-radius: 6px;
-    box-shadow: 0px 0px 5px rgb(110, 154, 110) inset;
-    color: rgb(93, 88, 37);
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgb(110, 154, 110) inset;
+  color: rgb(93, 88, 37);
 }
 
 /* estilos menu hamburgesa para version movil */
 /* no debe aparecer en la vista de escritorio */
 .menu_burger {
-    display: none;
+  display: none;
 }
 
 .menu_burger img {
-    width: 40px;
+  width: 40px;
 }
 
 /* Contenido de la pagina */
@@ -126,354 +125,523 @@ header {
 y en la parte derecha inferior, pero como ahora lo resolvi de otra manera casi no es necesario. ahora
 se puede hacer con dos columnas. */
 main {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template: 50% 50% / 50% 50%;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template: 50% 50% / 50% 50%;
 }
 
 /* aqui puse los atributos de la caja imagen que va en la esquina inferior derecha */
 
 .imagen {
-    grid-column: 2/3;
-    grid-row: 1/3;
-    align-self: center;
-    justify-self: center;
-    animation: auto 3s infinite linear;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+  animation: auto 3s infinite linear;
 }
 
 @keyframes auto {
-    0% {
-        transform: translate(-5%, 5%) rotateY(10deg);
-        scale: 1;
+  0% {
+    transform: translate(-5%, 5%) rotateY(10deg);
+    scale: 1;
+  }
 
-    }
+  50% {
+    transform: translate(5%, -5%) rotateY(-10deg);
+    scale: 0.9;
+  }
 
-    50% {
-        transform: translate(5%, -5%) rotateY(-10deg);
-        scale: 0.9;
-    }
-
-    100% {
-        transform: translate(-5%, 5%) rotateY(10deg);
-        scale: 1;
-    }
+  100% {
+    transform: translate(-5%, 5%) rotateY(10deg);
+    scale: 1;
+  }
 }
 
 .imagen img {
-    width: 400px;
+  width: 400px;
 }
 
 /* aqui puse los atributos de la caja con el texto, no me gusto como quedo,
 tengo que seguir intentando moverlo y cambiarle la fuente y la organizacion. */
 
 .text {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    color: white;
-    width: 80%;
-    height: 100vh;
-    font-family: 'Ubuntu', sans-serif;
-    justify-self: center;
-    margin-top: 140px;
-
+  grid-column: 1/2;
+  grid-row: 1/3;
+  color: white;
+  width: 80%;
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  justify-self: center;
+  margin-top: 140px;
 }
 
 .text h1 {
-    font-size: 40px;
-    margin-bottom: 30px;
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 
 .text p {
-    margin: 15px;
-    margin-bottom: 40px;
+  margin: 15px;
+  margin-bottom: 40px;
 }
 
 .movile {
-    display: none;
+  display: none;
 }
 
 /* el boton tiene la sombra negra que lo hacer ver muy opaco, y el color verde parece moco
 ver que hacer con el color. */
 
 .text .boton {
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    display: block;
-    width: 100px;
-    text-align: center;
-    font-weight: bold;
-    background-color: lightseagreen;
-    box-shadow: 0px 0px 4px rgb(110, 154, 110);
-    color: white;
-    padding: 4px;
-    text-decoration: none;
-    transition: all 300ms;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  display: block;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  background-color: lightseagreen;
+  box-shadow: 0px 0px 4px rgb(110, 154, 110);
+  color: white;
+  padding: 4px;
+  text-decoration: none;
+  transition: all 300ms;
 }
 
 .text .boton:hover {
-    border-radius: 7px;
-    box-shadow: 0px 0px 5px rgb(110, 154, 110) inset;
-    color: rgb(93, 88, 37);
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px rgb(110, 154, 110) inset;
+  color: rgb(93, 88, 37);
 }
-
-
 
 /* Animacion de cometas */
 
 .cometa {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: 110%;
-    border-radius: 50%;
-    background-color: rgb(242, 211, 56);
-    box-shadow: 0px 0px 6px rgb(237, 198, 56),
-        0px 0px 12px rgb(234, 216, 115),
-        0px 0px 20px rgb(244, 236, 167);
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 110%;
+  border-radius: 50%;
+  background-color: rgb(242, 211, 56);
+  box-shadow: 0px 0px 6px rgb(237, 198, 56), 0px 0px 12px rgb(234, 216, 115),
+    0px 0px 20px rgb(244, 236, 167);
 }
 
 .uno {
-    animation: comet 1s infinite linear;
-    animation-delay: 3s;
+  animation: comet 1s infinite linear;
+  animation-delay: 3s;
 }
 
 .dos {
-    animation: comet2 0.8s infinite linear;
-    animation-delay: 5s;
+  animation: comet2 0.8s infinite linear;
+  animation-delay: 5s;
 }
 
 .tres {
-    animation: comet3 1.3s infinite linear;
-    animation-delay: 2s;
+  animation: comet3 1.3s infinite linear;
+  animation-delay: 2s;
 }
 
 .cuatro {
-    animation: comet4 0.9s infinite linear;
-    animation-delay: 4s;
+  animation: comet4 0.9s infinite linear;
+  animation-delay: 4s;
 }
 
 .cinco {
-    animation: comet5 1.5s infinite linear;
-    animation-delay: 6s;
+  animation: comet5 1.5s infinite linear;
+  animation-delay: 6s;
 }
 
 @keyframes comet {
-    0% {
-        top: 0%;
-        left: 100%;
-    }
+  0% {
+    top: 0%;
+    left: 100%;
+  }
 
-    100% {
-        top: 100%;
-        left: 0;
-    }
+  100% {
+    top: 100%;
+    left: 0;
+  }
 }
 
 @keyframes comet2 {
-    0% {
-        top: 0%;
-        left: 87%;
-    }
+  0% {
+    top: 0%;
+    left: 87%;
+  }
 
-    100% {
-        top: 100%;
-        left: 12%;
-    }
+  100% {
+    top: 100%;
+    left: 12%;
+  }
 }
 
 @keyframes comet3 {
-    0% {
-        top: 12%;
-        left: 100%;
-    }
+  0% {
+    top: 12%;
+    left: 100%;
+  }
 
-    100% {
-        top: 88%;
-        left: 0%;
-    }
+  100% {
+    top: 88%;
+    left: 0%;
+  }
 }
 
 @keyframes comet4 {
-    0% {
-        top: 12%;
-        left: 100%;
-    }
+  0% {
+    top: 12%;
+    left: 100%;
+  }
 
-    100% {
-        top: 100%;
-        left: 8%;
-    }
+  100% {
+    top: 100%;
+    left: 8%;
+  }
 }
 
 @keyframes comet5 {
-    0% {
-        top: 0%;
-        left: 92%;
-    }
+  0% {
+    top: 0%;
+    left: 92%;
+  }
 
-    100% {
-        top: 90%;
-        left: 0%;
-    }
+  100% {
+    top: 90%;
+    left: 0%;
+  }
 }
 
+.about-section {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(rgba(65, 63, 63, 0.786), rgba(48, 46, 46, 0.885));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
 
+.about {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0% auto;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
 
+.about h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.about p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
 
+.img-about {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-about img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.contacto {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.contacto h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.contacto p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contacto .info {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.contacto form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contacto form label {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: lighter;
+}
+
+.contacto form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 4px rgb(110, 154, 110);
+}
+
+.contacto form textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 4px rgb(110, 154, 110);
+}
+.contacto form button {
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  display: block;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  background-color: lightseagreen;
+  box-shadow: 0px 0px 4px rgb(110, 154, 110);
+  color: white;
+  padding: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.contacto form button:hover {
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px rgb(110, 154, 110) inset;
+  color: rgb(93, 88, 37);
+}
+
+#confirmation {
+  display: none;
+  background-color: rgba(65, 63, 63, 0.336);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(49, 185, 67, 0.6);
+  box-shadow: 0px 0px 5px rgba(65, 63, 63, 0.6);
+  margin: 1rem auto;
+  color: white;
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  background-color: rgba(65, 63, 63, 0.2);
+  box-shadow: 0px -1px 5px rgba(65, 63, 63, 0.6);
+}
+
+.footer {
+  width: 90%;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer img {
+  width: 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.footer a img:hover {
+  transform: scale(1.1);
+  transition: all 300ms;
+}
 
 /* Responsive */
 
 @media (max-width: 1055px) {
-    #logotipo {
-        width: 60%;
-    }
+  #logotipo {
+    width: 60%;
+  }
 }
 
 @media (max-width: 1000px) {
-    .text {
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
+  .text {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
 
-    .text h1 {
-        font-size: 30px;
-    }
+  .text h1 {
+    font-size: 30px;
+  }
 
-    .text p {
-        width: 50%;
-    }
+  .text p {
+    width: 50%;
+  }
 
-    #logotipo {
-        width: 55%;
-    }
+  #logotipo {
+    width: 55%;
+  }
 
-    #logotipo img {
-        width: 12%;
-    }
+  #logotipo img {
+    width: 12%;
+  }
 }
 
 @media (max-width: 860px) {
-    #logotipo {
-        width: 45%;
-    }
+  #logotipo {
+    width: 45%;
+  }
 
-    #logotipo img {
-        width: 15%;
-    }
+  #logotipo img {
+    width: 15%;
+  }
+
+  .img-about img {
+    width: 60%;
+  }
 }
 
 @media (max-width: 700px) {
-    .text {
-        grid-column: 1/3;
-        grid-row: 1/2;
-        margin-top: 120px;
-    }
+  .text {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-top: 120px;
+  }
 
-    .text h1 {
-        font-size: 25px;
-    }
+  .text h1 {
+    font-size: 25px;
+  }
 
-    #logotipo img {
-        width: 18%;
-    }
+  #logotipo img {
+    width: 18%;
+  }
 
-    .desk {
-        display: none;
-    }
+  .desk {
+    display: none;
+  }
 
-    .movile {
-        display: block;
-    }
+  .movile {
+    display: block;
+  }
 
-    .menu_burger {
-        display: block;
-    }
+  .menu_burger {
+    display: block;
+  }
 
-
-
-    /* aqui trabajaremos en la parte del menu en el movil. */
-    .menumovil {
-        position: absolute;
-        width: 70%;
-        height: 400px;
-        background-color: rgb(83, 90, 83);
-        opacity: .95;
-        z-index: 3;
-        top: 100px;
-        transform: translateX(200%);
-        transition: all 300ms;
-    }
-    .menumovil--show {
-        transform: translateX(40%);
-    }
-    #menu {
-        width: 100%;
-        text-align: center;
-    }
-    #menu ul {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
-    #menu ul li{
-        margin: 25px;
-        font-size: 22px;
-    }
-    #login {
-        width: 100%;
-        text-align: center;
-        margin: 20px;
-        
-    }
-    #login .boton {
-        font-size: 20px;
-    }
-
-
+  /* aqui trabajaremos en la parte del menu en el movil. */
+  .menumovil {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(83, 90, 83);
+    opacity: 0.95;
+    z-index: 3;
+    top: 100px;
+    transform: translateX(200%);
+    transition: all 300ms;
+  }
+  .menumovil--show {
+    transform: translateX(-5%);
+  }
+  #menu {
+    width: 100%;
+    text-align: center;
+  }
+  #menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  #menu ul li {
+    margin: 25px;
+    font-size: 22px;
+  }
+  #login {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+  }
+  #login .boton {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 520px) {
-    #logotipo {
-        width: 60%;
-    }
+  #logotipo {
+    width: 60%;
+  }
 
-    #logotipo img {
-        width: 22%;
-    }
+  #logotipo img {
+    width: 22%;
+  }
 
-    .text {
-        margin-top: 90px;
-    }
+  .text {
+    margin-top: 90px;
+  }
+  .img-about img {
+    width: 80%;
+  }
 }
 
 @media (max-width: 415px) {
-    #logotipo {
-        width: 70%;
-    }
+  #logotipo {
+    width: 70%;
+  }
 
-    .text {
-        margin-top: 65px;
-        z-index: 2;
-    }
+  .text {
+    margin-top: 65px;
+    z-index: 2;
+  }
 
-    .text .boton {
-        opacity: .9;
-    }
+  .text .boton {
+    opacity: 0.9;
+  }
 
-    .imagen {
-        z-index: 1;
-    }
-
+  .imagen {
+    z-index: 1;
+  }
 }
 
 @media (max-width: 355px) {
-    #logotipo img {
-        width: 30%;
-    }
+  #logotipo img {
+    width: 30%;
+  }
 
-    .text {
-        margin-top: 35px;
-    }
+  .text {
+    margin-top: 35px;
+  }
 }

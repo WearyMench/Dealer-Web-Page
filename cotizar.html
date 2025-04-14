@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotiza tu auto</title>
+    <link rel="stylesheet" href="css/cotizar.css" />
+  </head>
+  <body>
+    <header>
+      <div id="encabezado">
+        <div id="logotipo">
+          <img src="img/carrito.webp" alt="logo" />
+          <h2>KG Auto Import</h2>
+        </div>
+        <div id="menumovil" class="menumovil">
+          <nav id="menu">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="index.html#about">Nosotros</a></li>
+              <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="burger" class="menu_burger">
+          <img src="img/hamburguesa.png" alt="menu" />
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Cotiza tu auto ideal</h1>
+
+      <label for="tipo">Tipo de Auto:</label>
+      <select id="tipo">
+        <option value="sedan">Sedán</option>
+        <option value="suv">SUV</option>
+        <option value="pickup">Pickup</option>
+      </select>
+
+      <label for="marca">Marca:</label>
+      <select id="marca">
+        <option value="toyota">Toyota</option>
+        <option value="ford">Ford</option>
+        <option value="honda">Honda</option>
+      </select>
+
+      <label for="anio">Año:</label>
+      <select id="anio">
+        <option value="2020">2020</option>
+        <option value="2022">2022</option>
+        <option value="2024">2024</option>
+      </select>
+
+      <button onclick="calcularPrecio()">Calcular Precio</button>
+
+      <div class="resultado" id="resultado">
+        <p>Selecciona tus opciones y presiona "Calcular Precio".</p>
+      </div>
+    </div>
+
+    <script src="js/cotizar.js"></script>
+  </body>
+</html>
