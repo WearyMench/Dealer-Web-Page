@@ -27,7 +27,7 @@ function calcularPrecio() {
     tipo: { suv: 5000, pickup: 7000 },
     marca: { ford: 3000, honda: 2000 },
     anio: { 2022: 2000, 2024: 4000 },
-    color: { rojo: 300, blanco: 500, negro: 700 },
+    color: { rojo: 300, blanco: 500, negro: 700, gris: 350 },
   };
 
   let precioBase = 10000;
@@ -91,12 +91,26 @@ function calcularPrecio() {
     colorFilters[color] || "none"
   };">
       </div>
-      <a href="mailto:ventas@kgautoimport.com?subject=Cotización%20de%20vehículo&body=
-        Tipo: ${tipo.toUpperCase()}%0A
-        Marca: ${marca.toUpperCase()}%0A
-        Año: ${anio}%0A
-        Color: ${color.toUpperCase()}%0A
-        Precio estimado: $${precioBase.toLocaleString()}" 
-        class="btn-cotizar">Solicitar cotización</a>
+      <button type="button" class="btn-cotizar" id="btnSolicitarCotizacion" onClick="openModal()">Solicitar cotización</button>
     `;
 }
+
+function openModal() {
+  document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+  document.getElementById("modalMessage").innerHTML = ""; // Limpiar el mensaje al cerrar el modal
+  document.getElementById("modalMessage").style.display = "none"; // Ocultar el mensaje al cerrar el modal
+}
+
+document.getElementById("clientForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const name = document.getElementById("clientName").value;
+  const email = document.getElementById("clientEmail").value;
+  const messageContainer = document.getElementById("modalMessage");
+  messageContainer.innerHTML = `¡Gracias, ${name}! Hemos recibido los detalles de su cotización. Nuestro equipo revisará la información y le responderá a la brevedad.`;
+  messageContainer.style.display = "block";
+  document.getElementById("clientForm").reset(); // Reset the form fields
+});
